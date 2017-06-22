@@ -1,0 +1,1 @@
+Person NeoVim configuration
