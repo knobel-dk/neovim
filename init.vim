@@ -44,3 +44,17 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+""" JENS IS THE MAN """
+" Keep showing the statusline (do not make it disapear)
+set laststatus=2
+" Show result of search live when typing
+set incsearch
+" Highlight searches
+set hlsearch
+" make searches case-sensitive only if they contain upper-case characters
+set ignorecase smartcase
+" use emacs-style tab completion when selecting files, etc
+set wildmode=longest,list,full
+" make tab completion for files/buffers act like bash
+set wildmenu
