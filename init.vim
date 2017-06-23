@@ -22,4 +22,24 @@ set number              " Show the line numbers on the left side.
 :command W w
 :command Q q
 
-inoremap jj <esc>       " Go from Insert to Normal mode with a 'jj'
+" Go from Insert to Normal mode with a 'jj'
+inoremap jj <esc>       
+
+" Remove the Escape functionality
+inoremap <esc> <NOP>
+
+" Use comma instead of colon
+nnoremap , :
+
+" Remove the colon functionality
+nnoremap : <Nop>
+
+inoremap <Up> <NOP>
+inoremap <Down> <NOP>
+inoremap <Left> <NOP>
+inoremap <Right> <NOP>
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
