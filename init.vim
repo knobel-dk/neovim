@@ -23,7 +23,7 @@ set number              " Show the line numbers on the left side.
 :command Q q
 
 " Go from Insert to Normal mode with a 'jj'
-inoremap jj <esc>       
+inoremap jj <esc>
 
 " Remove the Escape functionality
 inoremap <esc> <NOP>
@@ -32,8 +32,9 @@ inoremap <esc> <NOP>
 nnoremap , :
 
 " Remove the colon functionality
-nnoremap : <Nop>
+nnoremap : <NOP>
 
+" Disable arrow keys
 inoremap <Up> <NOP>
 inoremap <Down> <NOP>
 inoremap <Left> <NOP>
@@ -43,3 +44,6 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+" No jumps after leaving insert mode
+inoremap <silent> <Esc> <C-O>:stopinsert<CR>
