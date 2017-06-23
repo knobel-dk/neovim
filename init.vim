@@ -22,13 +22,13 @@ set number              " Show the line numbers on the left side.
 :command W w
 :command Q q
 
-" Go from Insert to Normal mode with a 'jj'
-inoremap jj <esc>
-
 " Remove the Escape functionality
-inoremap <esc> <NOP>
+inoremap <Esc> <NOP>
 
-" Use comma instead of colon
+" Remap Escape. Add no jumps after leaving insert mode
+inoremap <silent> jj  <C-O>:stopinsert<CR>
+
+" Use comma instead of colon. Easier on DK keyboards.
 nnoremap , :
 
 " Remove the colon functionality
@@ -44,6 +44,3 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
-
-" No jumps after leaving insert mode
-inoremap <silent> <Esc> <C-O>:stopinsert<CR>
