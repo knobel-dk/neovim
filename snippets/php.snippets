@@ -1,7 +1,14 @@
-snippet met
-	public function ${1}()
+snippet fun
+	/*
+	 * ${6}
+	 *
+	 * @param ${3:string} $${2:param} ${4:description}
+	 *
+	 * @return ${5:`Filename()`}
+	 */
+	public function ${1}( $3 $$2) : $5
 	{
-		${2}
+		${7};
 	}
 
 snippet cl
@@ -9,9 +16,15 @@ snippet cl
 
 	namespace ${1};
 
-	class ${2} {
+	/**
+	 * ${5}
+	 *
+	 */
+	 class ${2}
+	 {
 
-		public function __construct(${3}) {
+		public function __construct(${3})
+		{
 			${4}
 		}
 
