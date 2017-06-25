@@ -71,5 +71,5 @@ noremap <Left> <NOP>
 noremap <Right> <NOP>
 
 let mapleader = '.'	"The default is \, but a dot is much better.
-nmap <Leader>ev :tabedit $MYVIMRC<cr>
-nmap <Leader>es :tabedit ~/.config/nvim/snippets/
+nnoremap <Leader>ev :tabedit $MYVIMRC<cr>
+nnoremap <Leader>es :tabedit ~/.config/nvim/snippets/
