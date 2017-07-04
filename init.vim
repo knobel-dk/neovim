@@ -1,4 +1,4 @@
-"-----------------pLUGINS-----------------"
+"-----------------PLUGINS-----------------"
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
 
@@ -74,4 +74,6 @@ noremap <Right> <NOP>
 
 let mapleader = '.'	"The default is \, but a dot is much better.
 nnoremap <Leader>ev :tabedit $MYVIMRC<cr>
+nnoremap <Leader>f :FZF<cr>
+nnoremap <Leader>s :w<cr>
 nnoremap <Leader>es :tabedit ~/.config/nvim/snippets/
